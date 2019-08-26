@@ -32,7 +32,7 @@ pipeline {
         }
       }
     }
-    stage('Deploy') {
+    /*stage('Deploy') {
       when {
         expression {
           currentBuild.result == null || currentBuild.result == 'SUCCESS'
@@ -45,9 +45,10 @@ pipeline {
         }
       }
     }
-  }
+  }*/
 }
-def uploadArtifact(server) {
+
+/*def uploadArtifact(server) {
   def uploadSpec = """{
             "files": [
               {
@@ -61,4 +62,4 @@ def uploadArtifact(server) {
   def buildInfo = Artifactory.newBuildInfo()
   server.upload spec: uploadSpec, buildInfo: buildInfo
   server.publishBuildInfo buildInfo
-}
+}*/
