@@ -44,8 +44,8 @@ pipeline {
           uploadArtifact(server)
         }
       }
-    }
-  }*/
+    }*/
+  }
 }
 
 /*def uploadArtifact(server) {
