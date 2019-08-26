@@ -49,6 +49,7 @@ if (
   argv.push(hasSourceControl ? '--watch' : '--watchAll');
 }
 
+argv.push('--all');
 argv.push('--coverage');
 argv.push('--coverageDirectory=output/coverage/jest');
 
