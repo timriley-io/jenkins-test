@@ -52,4 +52,6 @@ if (
 argv.push('--coverage');
 argv.push('--coverageDirectory=output/coverage/jest');
 
+console.log('why is an old verison of this file being used?');
+
 jest.run(argv);
