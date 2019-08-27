@@ -1,0 +1,18 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:cypress": "npx cypress run",
+    "start:app": "npm start --prefix ..",
+    "test:ci": "start-server-and-test start:app http://localhost:3000 start:cypress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "start-server-and-test": "^1.10.0"
+  }
+}
