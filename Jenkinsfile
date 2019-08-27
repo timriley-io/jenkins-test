@@ -9,6 +9,7 @@ pipeline {
       steps {
         script {
           sh 'npm install'
+          sh 'cd tests && npm install'
         }
       }
     }
